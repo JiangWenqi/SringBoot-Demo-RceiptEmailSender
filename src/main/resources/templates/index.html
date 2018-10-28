@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8" />
+    <title>系统补发电子发票</title>
+</head>
+<body>
+<h1>系统电子发票补发</h1>
+<form action="/sendReceiptEmail" method="post" th:object="${receipt}">
+    <label>保单号: <input type="text" name="receiptID" /> </label>
+    <br />
+    <label>手机号: <input type="text" name="cellphone" /> </label>
+    <br />
+    <label>邮箱: <input type="text" name="email" /> </label>
+    <br />
+    <input type="submit" />
+</form>
+</body>
+</html>

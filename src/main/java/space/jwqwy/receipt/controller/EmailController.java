@@ -1,24 +1,23 @@
-package org.zhangyuying.receipt;
+package space.jwqwy.receipt.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.zhangyuying.receipt.entity.Receipt;
-import org.zhangyuying.receipt.service.EmailService;
-
+import space.jwqwy.receipt.entity.Receipt;
+import space.jwqwy.receipt.service.EmailService;
 
 /**
+ * receipt
+ *
  * @author Vinci
+ * Create: 2018/10/29 10:50
+ * Description: 处理请求
  */
-@SpringBootApplication
 @Controller
-public class ReceiptApplication {
-
-
+@RequestMapping("/")
+public class EmailController {
     @Autowired
     EmailService emailService;
 
@@ -28,9 +27,7 @@ public class ReceiptApplication {
      * @param model
      * @return index.html
      */
-    @RequestMapping("/")
     public String index(Model model) {
-
         model.addAttribute("receipt", new Receipt());
         return "index";
     }
@@ -67,8 +64,4 @@ public class ReceiptApplication {
 
     }
 
-    public static void main(String[] args) {
-
-        SpringApplication.run(ReceiptApplication.class, args);
-    }
 }

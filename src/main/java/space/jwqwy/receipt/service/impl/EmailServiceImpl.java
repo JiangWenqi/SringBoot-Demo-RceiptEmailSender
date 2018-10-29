@@ -1,4 +1,4 @@
-package org.zhangyuying.receipt.service.impl;
+package space.jwqwy.receipt.service.impl;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Component;
-import org.zhangyuying.receipt.service.EmailService;
+import space.jwqwy.receipt.service.EmailService;
 
 /**
  * receipt

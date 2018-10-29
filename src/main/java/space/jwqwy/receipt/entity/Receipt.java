@@ -1,4 +1,4 @@
-package org.zhangyuying.receipt.entity;
+package space.jwqwy.receipt.entity;
 
 /**
  * receipt

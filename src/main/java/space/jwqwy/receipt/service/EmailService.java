@@ -1,4 +1,4 @@
-package org.zhangyuying.receipt.service;
+package space.jwqwy.receipt.service;
 
 import org.springframework.stereotype.Service;
 
